@@ -58,6 +58,7 @@ body {
     grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 5px 5px black;
 }
 
 .header1 {
@@ -78,7 +79,6 @@ a > img {
     height: 20px;
     width: 600px;
     border-radius: 30px;
-    background-color: rgb(191, 191, 191);
 }
 #search:focus {
     background-color: rgb(218, 220, 221); 
@@ -105,11 +105,29 @@ a > img {
     margin-bottom: 20px;
 }
 .big-icon{
-    margin-left: 100px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.greetings {
+    margin-left: 30px;
+    font-family: roboto, sans-serif;
+}
+.Steve {
+    font-size: larger;
+    font-weight: bolder;
 }
 
 div.share > ul {
     display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+div.share > ul > li {
+    background-color: #f87171;
+    border-radius: 15px;
+    padding: 10px 20px;
 }
 
 .sidebar {
@@ -149,33 +167,61 @@ div.share > ul {
     padding-left: 30px;
     padding-top: 30px;
     background-color: rgb(209, 209, 209);
+    padding-bottom: 50px;
 } 
 .taskbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px;
 }
 .AnTr {
     display: flex;
     flex-direction: column;
 }
 .announcement {
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 50px;
     height: 300px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 15px;
+    padding: 10px;
 }
-
+.announcer {
+    font-family: roboto, sans-serif;
+    font-weight: 700;
+    align-self: center;
+    font-size: larger;
+}
 .announcement > ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 300px;
 }
+.announcement > ul  > li {
+    border-bottom: solid rgb(200, 200, 200);
+}
+.trender {
+    font-family: roboto, sans-serif;
+    font-weight: 700;
+    align-self: center;
+    font-size: larger;
+}
 .trending {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 200px;
+    height: 270px;
+    margin-top: 25px;
+    padding: 10px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+.trending > li {
+    border-bottom: solid rgb(200, 200, 200);
 }
 li {
     list-style: none;
@@ -187,4 +233,42 @@ li {
 }
 .dashboard {
     font-family: roboto, sans-serif;
+}
+
+.taskbar > div {
+    display: grid;
+    height: 250px;
+    grid-template-columns: 1fr 30fr;
+    grid-template-rows: 2fr 3fr 1fr;
+    background-color: white;
+    border-radius: 10px;
+    font-family: roboto, sans-serif;
+}
+.taskbar > div > .color {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    background-color: #f87171;
+    border-radius: 2px;
+}
+.taskbar > div > h1 {
+    margin-top: 20px;
+    font-size: larger;
+    font-weight: 700;
+    grid-column: 2 / 3;
+    margin-left: 200px;
+}
+.taskbar > div > div.random {
+    grid-column: 2 / 3;
+    margin-left: 20px;
+}
+.taskbar > div > .images {
+    justify-self: end;
+    grid-column: 2 / 3;
+    display: flex;
+    width: 200px;
+    justify-content:space-between;
+}
+.taskbar > div > .images > img {
+    width: 30px;
+    height: 30px;
 }
